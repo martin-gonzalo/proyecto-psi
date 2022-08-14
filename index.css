@@ -342,12 +342,17 @@ la unidad FR son fracciones del total
 
 GRIDS V2 
 
-ANIMACIONES, TRANSFORMACIONES Y TRANSICIONES
+ANIMACIONES, TRANSFORMACIONES Y TRANSICIONES*/
+
+.logo {
+      transform: scale(2);
+
+}
 
 
-GIT
+/*GIT
 
-boostrap 
+boostrap */
 
 
 
