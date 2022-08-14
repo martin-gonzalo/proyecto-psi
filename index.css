@@ -344,9 +344,17 @@ GRIDS V2
 
 ANIMACIONES, TRANSFORMACIONES Y TRANSICIONES*/
 
-.logo {
-      transform: scale(2);
+.psi-gonza {
+      transform: scale(1.5);
+      transform: skew(10deg, 20deg);
+      transition: height 5s cubic-bezier(0.215, 0.610, 0.355, 1);
 
+}
+
+.psi-gonza:hover {
+
+      height: 250px;
+      width: 250px;
 }
 
 
