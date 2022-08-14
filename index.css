@@ -1,0 +1,355 @@
+/* selector {propiedad: valor;} */
+* {margin: 1px;; padding: 1px; box-sizing: border-box;} /*border box es para que no cambie el tamaño de 
+la caja cuando ponemos un padding por ejemplo*/
+
+*{font-family: 'Imprima', sans-serif;}
+.header {background-color: rgba(255, 191, 107, 0.596); position: fixed; margin-left: 
+                              20px; width: 1500px; height: 100px;} /*el background se pone hasta la mitad no se porque*/
+
+.menu {margin-left: 300px; margin-top: 25px;}
+
+.psi-gonza {width: 80px; height: 100px;}
+
+header nav ol li{margin-left: 60px; margin-top: 50px; display:inline;}
+
+nav {display:flex;}
+
+section { color: red;}
+
+body {background-image: url("./fondo-de-pagina.jpeg");} 
+
+footer {background-color: coral;}
+
+h1 {color: rgb(255, 210, 126); font-weight:900;
+      position:static; 
+      left: 5px; 
+      top: 5px; 
+      z-index: 2; margin-top: 205px; margin-left: 400px;}
+p {color: orangered;}
+a { color: green; text-decoration:none;}
+
+/*div ul h2 {position: sticky; top: 10px;}      EL POSITION STICKY ME SALIO HORRIBLE
+div ul li {position: sticky; top: 10px;} */
+
+header a {color:rgb(255, 115, 0);} 
+
+.otra-letra {font-size: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+           text-align: center;
+          line-height: 2;} /* ES EL INTERLINEADO*/
+
+.blanca {color: white;}
+          
+.otra-letra .blanca {color: white;}
+
+.otra-letra .coral {color:coral;}
+
+/*PARA INSTALAR UN TIPO DE LETRA NO EXISTENTE VOY A FONTS.GOOGLE.COM/ SELECCIONO LOS ESTILOS/ 
+COPIO EL ENLACE, QUE IRIA DENTRO DE LA ETIQUETA "HEAD" O EN CSS CON "@IMPORT URL (EL ENLACE)
+ 
+Gama de colores en:
+ RGB/RGBa (RGBa es para transparencia)
+ HSL
+ Colores hexadecimales*/
+
+
+ body {font-family:cursive;}
+
+
+/* DENTRO DE LA ETIQUETA DE HTML PONGO class="nombre de la clase"*/
+/* HACER RUTA SIRVE PARA LOGRAR ESPECIFICIDAD*/ 
+/* SE PUEDE APLICAR A UN MISMO ELEMENTO, 2 CLASS*/
+
+
+
+/* ID */ 
+#volver-arriba { width: 500px;} 
+/* EN HTML PONGO <a href="#volver-arriba">volver arriba</a> Y ME LLEVA A id="volver-arriba" QUE SE PONE 
+DENTRO DE CUALQUIER ETIQUETA */
+html { scroll-behavior:smooth;}
+
+
+/* HERENCIA EN CASCADA es en relación a la especificidad y en segundo lugar en relacion a la cascada 
+propiamente dicha*/ 
+
+/*CLASE BOX MODELING*/
+
+/*CAMEL CASE, GUION MEDIO Y GUION BAJO PARA DIFERENCIAR CLASES */
+
+
+/* BEM 
+
+Es para que nuestro codigo sea más facil de leer (Block Element Modifier) moduliza los bloques de codigo,
+elementos y modificadores. para un bloque seria con guion medio o camel case, para elementos seria con dos guiones bajos (__) y para modificadores con dos guiones medios (--)
+
+BOX MODEL
+
+TIENEN:
+ 
+CONTENIDO: texto o imagen 
+PADDING: espacio interior
+BORDER: limite entre elemento y espacio externo
+MARGIN: separacion entre el borde y el afuera de la caja (no es parte del elemento)
+
+width y height: ALTO Y ANCHO
+*/
+
+.imagenes { height: 200px;
+          overflow: scroll; 
+            margin-top: 250px;
+            display:flex;} 
+
+/* OVER FLOW ES CUANDO ALGUN ELEMENTO SE ESCAPA DE LA CAJA, Y HAY DIFERENTES OPCIONES PARA ESCONDER O 
+MOSTRAR*/
+
+.imagenes p{font-size: 25px;
+            padding: 30px;}
+
+.imagenes img {padding: 20px;
+               border: 3px inset orangered;
+               width: 300px;
+               height: 300px;
+               margin-left: 50px;
+               margin-bottom: 85px;} 
+
+
+.registrate article {background-color: rgb(253, 187, 110);}
+.registrate-videos {color: rgb(1, 26, 1);}
+.registrate h3 {color: darkmagenta;} 
+#orange-background {background-color: orangered;}
+
+div h2 {color: white;}
+
+.texto {margin-top: 10px;}
+
+.texto p{font-size: 10px;}
+
+/* POSITION 
+
+ES UNA PROPIEDAD QUE NOS PERMITE MOVER CON LIBERTAD LOS ELEMENTOS A LO LARGO Y ANCHO DE LA PAGINA 
+
+VALORES POSIBLES: 
+
+RELATIVE
+ABSOLUTE
+FIXED
+STICKY */
+
+.footer{position: relative;
+          left: 500p;}
+
+.registrate article {position: absolute;
+                         left: 200px;
+                         top: 400px;}
+
+
+/* MEDIA QUERIES*/
+
+.informacion-dos { 
+      height: 3000px; /* si no le pongo medidas especificas la pantalla sería responsive al tamaño*/
+      width: 1335px;
+      background-color: blueviolet;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 12fr;
+      
+
+}
+
+.mi-terapia {
+
+      grid-area: mi-terapia; 
+      background-image: linear-gradient(to right, white, black);
+}
+
+.estructuralismo {
+
+      grid-area: estructuralismo;
+      background-image: linear-gradient(to right, orange, black);
+}
+
+.funcionalismo {
+
+      grid-area: funcionalismo;
+      background-image: linear-gradient(to right, orange, black);
+}
+
+.psicoanalisis {
+
+      grid-area: psicoanalisis;
+}
+
+.conductismo {
+
+      grid-area: conductismo;
+}
+
+.gestalt {
+
+      grid-area: gestalt;
+}
+
+.humanismo {
+
+      grid-area: humanismo;
+
+}
+
+.cognitivismo {
+
+      grid-area: cognitivismo;
+}
+
+
+#congrid { 
+      display: grid;
+      grid-template-columns: 300px 3fr 1fr;
+      grid-template-rows: 1fr 1fr 500px 1fr;
+      grid-template-areas: 
+      "mi-terapia estructuralismo funcionalismo"
+      "mi-terapia psicoanalisis conductismo gestalt"
+      "mi-terapia humanismo cognitivismo"
+      "mi-terapia humanismo humanismo";
+
+}                                            /* NO ME SALE */
+ 
+
+
+
+
+#border {border:2px solid yellow;
+}
+
+
+.otra-letra {border: 3px solid black}
+
+
+
+
+
+/*--------------------------------CLASE DE FLEXBOX  --------------------------------------------*/ 
+
+/*.apartado-a {border: 1px solid slateblue; 
+            width: 200px; height: 200px;
+            padding: 20px;
+            } 
+.apartado-b {border: 1px solid slateblue; 
+      width: 200px; height: 200px;
+      padding: 20px;
+      } 
+.apartado-c {border: 1px solid slateblue; 
+      width: 200px; height: 200px;
+      padding: 20px;
+      } 
+.apartado-d {border: 1px solid slateblue; 
+      width: 200px; height: 200px;
+      padding: 20px;
+      } */
+
+
+
+/* PROPIEDADES PARA APLICAR EN EL CONTENEDOR FLEXIBLE 
+
+DISPLAY:                     INICIA, INDICARA QUE SUS HIJOS SERÁN FLEXIBLES
+
+FLEX-DIRECTION:              ELEGIR DIRECCION VRTICAL U HORIZONTAL
+
+FLEX-WRAP:                   ¿SE HARÁ MULTILINEA CUANDO LLEGUE AL LÍMITE?
+
+FLEX-FLOW:                   ABREVIACION DE PROPIEDADES
+
+JUSTIFY-CONTENT:             ALINEAR HORIZONTALMENTE A LOS HIJOS SI EL PADRE ES "FILA", O VERTICALMENTE   SI  EL PADRE ES "COLUMNA"
+
+ALIGN-ITEMS:                 ALINEAR VERTICALMENTE A LOS HIJOS (SI EL PADRE ES COLUMNA)
+
+ALIGN-CONTENT:               ALINEAR VERTICALMENTE A LOS HIJOS CUANDO SON MULTILINEA */
+
+
+
+#informacion { height: 80vh;
+      display: flex; 
+      flex-direction: row; /* la propiedad row-reverse invierte el orden de derecha a izquierda, row quiere decir que se acomodan en fila. "display: flex; abre flexbox*/
+      flex-wrap: wrap; /* para pasar hacia abajo si achico la pantalla. tambien esta la opcion de wrap-reverse */
+      justify-content: space-around;
+} 
+ 
+.apartado-a { order: +6;}  /* tuve problemas para manejar esto*/
+ 
+
+.apartado-dos {border: 1px solid slateblue; 
+      width: 200px; height: 200px;
+      padding: 20px;
+      
+      } 
+
+/*#informacion-2 { height: 80vh;
+      display: flex; 
+      flex-direction: column; /* se distribuye en columnas. se pone primero la propiedad flex-direction y luego flex-wrap
+      flex-wrap: nowrap;
+} */
+ 
+/* flex-flow
+Es la forma abreviada (shorthand) o rápida para las propiedades:
+
+flex-direction
+flex-wrap
+Se pone primero la propiedad de flex-direction, y luego la de flex-wrap.
+.padre-flex {
+display: flex;
+flex-flow: row nowrap;
+} */
+
+
+
+
+
+
+
+.apartado {position: relative; top: 30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CLASE 6                    GRIDS
+
+la unidad FR son fracciones del total 
+
+GRIDS V2 
+
+ANIMACIONES, TRANSFORMACIONES Y TRANSICIONES
+
+
+GIT
+
+boostrap 
+
+
+
+
+
+
