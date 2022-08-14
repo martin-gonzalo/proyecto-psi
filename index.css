@@ -176,6 +176,7 @@ STICKY */
 .psicoanalisis {
 
       grid-area: psicoanalisis;
+      background-image: linear-gradient(to right, orange, black)
 }
 
 .conductismo {
