@@ -1,4 +1,4 @@
-/* selector {propiedad: valor;} */
+/*selector {propiedad: valor;} */
 * {margin: 1px;; padding: 1px; box-sizing: border-box;} /*border box es para que no cambie el tamaño de 
 la caja cuando ponemos un padding por ejemplo*/
 
@@ -142,19 +142,23 @@ STICKY */
                          top: 400px;}
 
 
-/* MEDIA QUERIES*/
+                         
+                         
+                         
+                         
+                         /*GRID*/
 
 .informacion-dos { 
-      height: 3000px; /* si no le pongo medidas especificas la pantalla sería responsive al tamaño*/
-      width: 1335px;
-      background-color: blueviolet;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 12fr;
-      
-
+             height: 3000px; /* si no le pongo medidas especificas la pantalla sería responsive al tamaño*/
+             width: 1335px;
+             background-color: blueviolet;
+             display: grid;
+             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+             grid-template-rows: 1fr 12fr;
+             justify-content: center;
+                        
 }
-
+                        
 .mi-terapia {
 
       grid-area: mi-terapia; 
@@ -210,18 +214,25 @@ STICKY */
       "mi-terapia psicoanalisis conductismo gestalt"
       "mi-terapia humanismo cognitivismo"
       "mi-terapia humanismo humanismo";
-
 }                                            /* NO ME SALE */
- 
+
+
+                              /* MEDIA QUERIES*/
 
 
 
 
-#border {border:2px solid yellow;
-}
 
 
-.otra-letra {border: 3px solid black}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -229,7 +240,7 @@ STICKY */
 
 /*--------------------------------CLASE DE FLEXBOX  --------------------------------------------*/ 
 
-/*.apartado-a {border: 1px solid slateblue; 
+.apartado-a {border: 1px solid slateblue; 
             width: 200px; height: 200px;
             padding: 20px;
             } 
@@ -244,9 +255,13 @@ STICKY */
 .apartado-d {border: 1px solid slateblue; 
       width: 200px; height: 200px;
       padding: 20px;
-      } */
+      } 
 
-
+      #border {border:2px solid yellow;
+      }
+      
+      .otra-letra {border: 3px solid black}
+      
 
 /* PROPIEDADES PARA APLICAR EN EL CONTENEDOR FLEXIBLE 
 
@@ -274,6 +289,7 @@ ALIGN-CONTENT:               ALINEAR VERTICALMENTE A LOS HIJOS CUANDO SON MULTIL
 } 
  
 .apartado-a { order: +6;}  /* tuve problemas para manejar esto*/
+.apartado {position: relative; top: 30px;}
  
 
 .apartado-dos {border: 1px solid slateblue; 
@@ -300,12 +316,6 @@ flex-flow: row nowrap;
 } */
 
 
-
-
-
-
-
-.apartado {position: relative; top: 30px;}
 
 
 
@@ -343,14 +353,71 @@ la unidad FR son fracciones del total
 GRIDS V2 
 
 ANIMACIONES, TRANSFORMACIONES Y TRANSICIONES*/
-
-.logo {
-      transform: scale(2);
+.psi-gonza {
+      transform: scale(1.5);
+      transform: skew(10deg, 20deg);
+      transition: height 5s cubic-bezier(0.215, 0.610, 0.355, 1);
 
 }
 
+.psi-gonza:hover {
+
+      height: 250px;
+      width: 250px;
+}
+
+
 
 /*GIT
+
+GIT --version
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --list  Se puede ver el usuario, el email y otros parámetros
+que dependerán de cada sistema operativo 
+git help config
+git config --help
+man git-config
+👉 /?: si quieres saber más de un comando, añade /? para ver la ayuda 
+relacionada. Te será muy útil para ver las muchas opciones de cada comando.
+👉 HELP: te mostrará una lista de comandos disponibles.
+👉 DIR: es el comando más conocido de DOS y sirve para ver el contenido de una 
+carpeta (en MAC-OS usar LS).
+👉 CD: sirve para entrar en una carpeta o salir de ella (CD…).
+👉 CLEAR: limpia la consola.
+👉 MKDIR: con este comando crearás una carpeta nueva. Con RMDIR podrás 
+eliminarla.
+👉 MOVE y COPY: son los comandos para mover y copiar archivos 
+respectivamente. Deberás indicar el nombre del archivo con su ruta (si está en otra 
+carpeta en la que te encuentras) y la ruta de destino.
+👉 RENAME: sirve para renombrar un archivo o carpeta. Hay que indicar el 
+nombre original y el definitivo.
+👉 DEL: es el comando para eliminar un archivo. Recuerda que no irá a la 
+Papelera, así que piensa muy bien antes de borrar algo. Y para eliminar carpeta usa 
+el comando RD (en MAC-OS usar RM para archivos / para eliminar carpetas RM 
+-RF).
+👉 EXIT: cierra la ventana de la línea de comandos o símbolo del sistema.
+👉 COPY CON: crear archivos (en MAC-OS usar TOUCH).
+
+GIT INIT
+Este comando se usa para crear un nuevo repositorio en Git. 
+Nos crea un repositorio de manera local y lo hará en la carpeta 
+donde estamos posicionados
+git init mi_repositorio
+dir para saber en donde estoy
+
+
+
+
+
+
+
+
+
+GITHUB
+
+git remote add origin "y el link .git" >>> COMANDO PARA VINCULAR UN PROYECTO A LA NUBE
+
 
 boostrap */
 
