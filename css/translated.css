@@ -37,45 +37,45 @@ la caja cuando ponemos un padding por ejemplo*/
   /* la propiedad row-reverse invierte el orden de derecha a izquierda, row quiere decir que se acomodan en fila. "display: flex; abre flexbox*/
   flex-wrap: wrap;
   /* para pasar hacia abajo si achico la pantalla. tambien esta la opcion de wrap-reverse */
-  justify-content: space-around; }
+  justify-content: space-around;
+  
+  /* tuve problemas para manejar esto*/
+  .apartado {
+    position: relative;
+    top: 30px; }
+  
+  .apartado-dos {
+    border: 1px solid slateblue;
+    width: 200px;
+    height: 200px;
+    padding: 20px; }
+  
+  .apartado-a { 
+    order: +6;
+    border: 1px solid slateblue;
+    width: 200px;
+    height: 200px;
+    padding: 20px; }
+  
+  .apartado-b {
+    border: 1px solid slateblue;
+    width: 200px;
+    height: 200px;
+    padding: 20px; }
+  
+  .apartado-c {
+    border: 1px solid slateblue;
+    width: 200px;
+    height: 200px;
+    padding: 20px; }
+  
+  .apartado-d {
+    border: 1px solid slateblue;
+    width: 200px;
+    height: 200px;
+    padding: 20px; }
+  }
 
-.apartado-a {
-  order: +6; }
-
-/* tuve problemas para manejar esto*/
-.apartado {
-  position: relative;
-  top: 30px; }
-
-.apartado-dos {
-  border: 1px solid slateblue;
-  width: 200px;
-  height: 200px;
-  padding: 20px; }
-
-.apartado-a {
-  border: 1px solid slateblue;
-  width: 200px;
-  height: 200px;
-  padding: 20px; }
-
-.apartado-b {
-  border: 1px solid slateblue;
-  width: 200px;
-  height: 200px;
-  padding: 20px; }
-
-.apartado-c {
-  border: 1px solid slateblue;
-  width: 200px;
-  height: 200px;
-  padding: 20px; }
-
-.apartado-d {
-  border: 1px solid slateblue;
-  width: 200px;
-  height: 200px;
-  padding: 20px; }
 
 #border {
   border: 2px solid yellow; }
