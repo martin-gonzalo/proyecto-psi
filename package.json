@@ -1,0 +1,32 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto para coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_css": "node-sass --include-path scss scss/index.scss css/translated.css",
+    "watch_css": "nodemon -e scss -x \"npm run build_css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-gonzalo/proyecto-psi.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS"
+  ],
+  "author": "Gonzalo Sanchez Mansour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martin-gonzalo/proyecto-psi/issues"
+  },
+  "homepage": "https://github.com/martin-gonzalo/proyecto-psi#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+* {
+  margin: 1px;
+  padding: 1px;
+  box-sizing: border-box; }
+
+/*border box es para que no cambie el tamaño de 
+la caja cuando ponemos un padding por ejemplo*/
+* {
+  font-family: 'Imprima', sans-serif; }
+
+.header {
+  background-color: rgba(255, 191, 107, 0.596);
+  position: fixed;
+  margin-left: 20px;
+  width: 1500px;
+  height: 100px; }
+  .header .menu {
+    margin-left: 300px;
+    margin-top: 25px; }
+  .header .psi-gonza {
+    width: 80px;
+    height: 100px; }
+  .header nav ol li {
+    margin-left: 60px;
+    margin-top: 50px;
+    display: inline; }
+  .header a {
+    color: #ff7300; }
+  .header nav {
+    display: flex; }
+
+#informacion {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  /* la propiedad row-reverse invierte el orden de derecha a izquierda, row quiere decir que se acomodan en fila. "display: flex; abre flexbox*/
+  flex-wrap: wrap;
+  /* para pasar hacia abajo si achico la pantalla. tambien esta la opcion de wrap-reverse */
+  justify-content: space-around; }
+
+.apartado-a {
+  order: +6; }
+
+/* tuve problemas para manejar esto*/
+.apartado {
+  position: relative;
+  top: 30px; }
+
+.apartado-dos {
+  border: 1px solid slateblue;
+  width: 200px;
+  height: 200px;
+  padding: 20px; }
+
+.apartado-a {
+  border: 1px solid slateblue;
+  width: 200px;
+  height: 200px;
+  padding: 20px; }
+
+.apartado-b {
+  border: 1px solid slateblue;
+  width: 200px;
+  height: 200px;
+  padding: 20px; }
+
+.apartado-c {
+  border: 1px solid slateblue;
+  width: 200px;
+  height: 200px;
+  padding: 20px; }
+
+.apartado-d {
+  border: 1px solid slateblue;
+  width: 200px;
+  height: 200px;
+  padding: 20px; }
+
+#border {
+  border: 2px solid yellow; }
+
+.otra-letra {
+  border: 3px solid black; }
